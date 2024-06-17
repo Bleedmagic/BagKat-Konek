@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#F5EFE6 ;
+}
+
+.container {
+    margin-left: 20%;
+    padding: 20px;
+    padding-top: 20px;
+    margin-top: 3%;
+    background-color: #F5EFE6;
+
+}
+
+.request-list {
+    padding: 20px;
+    flex: 1;
+}
+
+.request-list h2 {
+    margin-bottom: 20px;
+}
+
+.status-button {
+    padding: 10px 15px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.pending, .approved, .disapproved, .cancelled, .all{
+    background-color: #4F6F52;
+    color: white;
+    border-radius: 5px;
+}
+
+.pending:hover, .approved:hover, .disapproved:hover, .cancelled:hover, .all:hover {
+    background-color: #1A4D2E;
+}
+
+.cancel-button {
+    background-color: #4F6F52; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cancel-button:hover {
+    background-color: #1A4D2E;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    color: #1A4D2E;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #1A4D2E;
+    color: #fff;
+}
