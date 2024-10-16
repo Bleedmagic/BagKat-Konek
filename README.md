@@ -181,6 +181,10 @@ We would like to thank the following contributors and supporters:
 - **Development Team:** For their hard work and dedication.
 - **Community Members:** For their participation and valuable input.
 
+## Contact Us
+
+or any inquiries or feedback, feel free to reach out!
+
 ## License
 
 This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for more details.
