@@ -1,0 +1,246 @@
+body {
+    margin: 0%;
+    font-family: Arial, sans-serif;
+    background-color: #F5EFE6;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-content {
+    margin-left: 20%;
+    padding: 20px;
+    padding-top: 70px;
+    flex: 1;
+    background-color: #F5EFE6;
+}
+
+.main {
+    color: #1A4D2E;
+    margin-top: 2%;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+table.hover-table tr:hover {
+    background-color: #4F6F52;
+}
+
+table.hover-table tr:hover td,
+table.hover-table tr:hover th {
+    color: white;
+}
+
+td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+    white-space: nowrap;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #1A4D2E;
+    color: #fffF;
+    white-space: nowrap;
+}
+
+tr:nth-child(odd) {
+    background-color: #D8ECCF;
+}
+
+tr:nth-child(even) {
+    background-color: #FAFAFA;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4F6F52;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.button-up {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.button:hover {
+    background-color: #1A4D2E;
+}
+
+.edit-button,
+.delete-button {
+    background-color: #4F6F52;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #1A4D2E;
+}
+
+.popup {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.popup-content {
+    width: 60%;
+    background: #F5EFE6;
+    padding: 50px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#popup-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0A6847;
+    text-align: left;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.form-actions input[type="submit"],
+.form-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-actions input[type="submit"] {
+    background-color: #4F6F52;
+    color: white;
+}
+
+.form-actions button {
+    background-color: #ccc;
+}
+
+.form-actions input[type="submit"]:hover,
+.form-actions button:hover {
+    background-color: #1A4D2E;
+    color: white;
+}
+
+#popup-title {
+    text-align: center;
+    color: #0A6847;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-content img {
+    max-width: 100%;
+    height: 100px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-right: 10px;
+    border-color: #459665;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.input-container input[type="text"] {
+    width: 200px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    border-color: #459665;
+}
+
+.search-official {
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+}
